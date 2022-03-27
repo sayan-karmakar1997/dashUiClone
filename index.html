@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +55,6 @@
 	#content_body{
 		width:100%;
 		height:auto;
-		background-color:green;
 		margin:0;
 	}
 	#cards{
@@ -103,6 +103,28 @@
 		position:absolute;
 		bottom:20px;
 	}
+	#projects{
+		font-size:20px;
+		font-weight:bold;
+		position:absolute;
+		margin-left:20px;
+		margin-top:35px;
+		width:100px;
+		color:#ebf2ff;
+		}
+	#active_project{
+		font-weight:bold;
+		font-size:16px;
+		margin-top:80px;
+		margin-left:20px;
+		margin-right:20px;
+		box-shadow: 0px 2px 4px 0px #dbdbdb;
+		}
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -112,9 +134,11 @@
 	</div>
 	<div id="content" class="no_scrollbar">
 		<div id="content_head">
-		
+		 <div id="projects">Projects</div>
+		 
 		</div>
 		<div id="content_body">
+			<div id="active_project">Active Projet</Div>
 			
 		</div>
 		<div id="cards">
@@ -125,10 +149,23 @@
 				<div class="card_completed">2 completed</div>
 			</div>
 			<div class="card">
+				<img class="card_icon" src="menu-svgrepo-com.svg">
+				<div class="card_header">Active Task</div>
+				<div class="card_number">132</div>
+				<div class="card_completed">28 completed</div>
 			</div>
 			<div class="card">
+				<img class="card_icon" src="people-svgrepo-com.svg">
+				<div class="card_header">Teams</div>
+				<div class="card_number">12</div>
+				<div class="card_completed">1 completed</div>
 			</div>
 			<div class="card">
+				<img class="card_icon" src="productivity^-svgrepo-com.svg">
+				<div class="card_header">Productivity</div>
+				<div class="card_number">76%</div>
+				<div class="card_completed">5% completed</div>
+		
 			</div>
 		</div>
 	</div>
